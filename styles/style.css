@@ -120,6 +120,61 @@ main > section{
     margin-bottom: 32px;
 }
 
+/* love and enjoy style */
+.love-enjoy{
+    display: flex;
+    margin-top: 130px;
+    gap: 146px;
+}
+
+.love-title{
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-top: 169px;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.love-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+.love-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.love-card .love-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 10px;
+}
+.love-card .love-card-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    margin-top: 10px;
+}
+.love-image{
+    max-width: 100%;
+}
+.secondary-btn{
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.btn-number{
+    font-size: 4.1rem;
+    font-weight: 800;
+    color: white;
+}
+.btn-experience{
+    font-size: 1.55rem;
+    font-weight: 500;
+    color: white;
+}
 /* fact card related style */
 .fact-section{
     margin-top: 130px;
@@ -193,22 +248,26 @@ main > section{
 }
 
     /* footer style */
-    /* footer{
+    #web-foot{
         max-width: 1440px;
-        margin: 130px auto;
+        margin: 0 auto;
+        border-radius: 8px;
+        margin-top: 169px;
+        margin-bottom: 216px;
     }
     .footer-description{
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         font-weight: 400;
-        padding: 39px 410px;
-        border-radius: 8px;  
-    } */
+        text-align: center;
+        padding: 38px 410px;
+    }
 
 /* small size device responsive */
 @media screen and (max-width:576px) {
     .navbar,
     .nav-link,
-    .feature-details{
+    .feature-details,
+    .love-enjoy{
         flex-direction: column;
     }
     .image-container,
@@ -231,11 +290,27 @@ main > section{
         justify-items: center;
         gap: 20px;
     }
-    /* footer responsive */
+    /* love style */
+    .secondary-btn{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+        /* footer responsive */
+    /* #web-foot{
+        max-width: 200px;
+        justify-items: center;
+         text-align: center;
+        align-items: center;
+    }
+    .footer-description{
+       justify-items: center;
+    } */
+
 }
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .feature-details{
+    .feature-details,
+    .love-enjoy{
         flex-direction: column;
     }
     .fact-card-container,
@@ -252,4 +327,14 @@ main > section{
         justify-items: center;
         gap: 20px;
     }
+    .secondary-btn{
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    /* #web-foot{
+        max-width: 1920px;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+    } */
 }
